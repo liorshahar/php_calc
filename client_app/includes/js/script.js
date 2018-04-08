@@ -36,7 +36,7 @@ $(document).ready(function(){
         num3 = $("#num3").val();
 
         $.post(
-            '../service_calculator/service.php',
+            'http://shenkar.html5-book.co.il/2017-2018/dcs/dev_13//service_calculator/service.php' ,
             {func:myfunc , num1 , num2 , num3 },
             function( data ) {
                 $(".result").append(" " + data.retVal);
@@ -54,7 +54,7 @@ $(document).ready(function(){
 
 
         $.get(
-            '../service_calculator/service.php',{func:myfunc , num1 , num2 , num3},
+            'http://shenkar.html5-book.co.il/2017-2018/dcs/dev_13//service_calculator/service.php',{func:myfunc , num1 , num2 , num3},
             function( data ) {
                 $(".result").append(" " + data.retVal);
                 console.log( "Return data:" + " " + data.retVal);
@@ -71,7 +71,7 @@ $(document).ready(function(){
 
         var dataObj = {func:myfunc , num1 , num2 , num3};
         $.ajax({
-            url: '../service_calculator/service.php',
+            url: 'http://shenkar.html5-book.co.il/2017-2018/dcs/dev_13//service_calculator/service.php',
             data: dataObj,
             type: 'PUT',
             success: function(data){

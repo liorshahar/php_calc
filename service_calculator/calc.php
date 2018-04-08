@@ -28,7 +28,7 @@ class Calc extends Controller{
         return $this->model->getRetVal();
     }
 }
-?>
+
 
 
         

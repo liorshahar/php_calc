@@ -47,6 +47,7 @@ switch($func){
         break;
 
 }
+
 $a = array('retVal' => $retVal);
 header('Content-Type: application/json');
 echo json_encode($a);
